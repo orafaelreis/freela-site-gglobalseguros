@@ -17,7 +17,7 @@ min-height: 100%;
 
 
 #topo h1{text-indent: -99999em;margin: 0; padding: 0}
-#topo h1 a{margin: 0;display: block;background: url(../imgs/logo-horizontal-transparente.png) no-repeat center center transparent;width: 425px;
+#topo h1 a{padding-left: 20px; margin: 0;display: block;background: url(../imgs/logo-horizontal-slogan.png) no-repeat center center transparent;width: 390px; height:173px;
   height: 190px;}
 #topo {height: 190px; color: #fff; background-image: url(../imgs/bg-topo.png)}
 
