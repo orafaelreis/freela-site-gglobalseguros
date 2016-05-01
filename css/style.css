@@ -137,10 +137,15 @@ footer div{
 }
 
 #form_warning{
-  color: #990000;
   margin-bottom: 5px
 }
 
+p.success{
+  color: #00AA00;
+}
+p.error{
+ color: #AA0000;
+}
 input.error{
  background-color: #FFFC7F;
 }

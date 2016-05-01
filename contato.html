@@ -38,28 +38,25 @@
         <div class="address">Rua Cristina Maria de Assis,431
         Bairro Califórnia - Belo Horizonte MG</div>
         ​
-        <div><a href="mailto:contato@gglobalseguros.com.br">contato@gglobalseguros.com.br</a></div>
+        <div><a href="mailto:adm@gglobalseguros.com.br">adm@gglobalseguros.com.br</a></div>
         <div>Tel: (31) 3054-8501 | (31) 99217-0752</div>
         ​<div>​Toll Free: 1800-000-0000</div>
         </div>
 
         <div class="six columns">
         <p>Solicite seu orçamento sem compromisso deixando seu contato à seguir:</p>
-        <div id="CntctFrm0wrapper" class="s10wrapper" data-reactid=".0.">
-
           <p id="form_warning"></p>
-          <form action="contato.php" method="POST" onsubmit="return validaForm(this);">
+          <form action="#" id="formcontato">
             <div class="row">
-              <input type="text" name="fnome" class="" placeholder="Nome" required>
-              <input type="text" name="femail" class="" placeholder="Email">
-              <!-- <label for="ftelefone">Telefone</label> -->
-              <input type="text" name="ftelefone" id="ftelefone" class="" placeholder="Telefone (XX) XXXX-XXXX" maxlength="15">
-              <input type="text" name="fendereço" class="" placeholder="Endereço">
-              <textarea name="fmensagem" class="" placeholder="Mensagem"></textarea>
-              <button id="CntctFrm0submit" class="" type="submit">Send</button>
+              <input type="hidden" name="fcodigo" value="asS5yxpbkCJJZOy6CXo4TdYDgEEWQ56L">
+              <input value="fnome" type="text" name="fnome" class="" placeholder="Nome" required>
+              <input value="rafael.reis@lalubema.com" type="text" name="femail" class="" placeholder="Email" required>
+              <input value="3131313131" type="text" name="ftelefone" id="ftelefone" class="" placeholder="Telefone (XX) XXXX-XXXX" maxlength="15" required>
+              <input value="fendereço" type="text" name="fendereco" class="" placeholder="Endereço">
+              <textarea name="fmensagem" class="" placeholder="Mensagem" required>Minha mensagem de teste</textarea>
+              <button class="" type="submit">Send</button>
             </div>
           </form>
-        </div>
       </div>
   </div>
   </div>
@@ -74,6 +71,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./js/maskbrphone.js"></script>
     <script src="./js/formvalidation.js"></script>
+    <script src="./js/submitform.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){

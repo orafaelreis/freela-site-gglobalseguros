@@ -1,5 +1,5 @@
 function validaForm(f){
-var a = new Array("Nome","E-mail","Telefone","Endereço","Mensagem");
+var a = new Array("Nome","E-mail","Telefone","Mensagem");
 var b = new Array("Mensagem");
 
 var ok = 1;
@@ -28,7 +28,8 @@ return ok;
 
 function validaCampo(campo,vinicio){
   hideMessage();
-  if(campo.value =="" || campo.value == vinicio){
+  var obrigatorio = campo.hasAttribute("required");
+  if(obrigatorio && (campo.value =="" || campo.value == vinicio)){
     showMessage("Erro: Verifique o campo "+vinicio+".");
     $(campo).addClass("error");
     return false;
@@ -42,7 +43,7 @@ return er.test(mail);
 }
 
 function showMessage(text){
-  $('#form_warning').html(text);
+  $('#form_warning').addClass('error').html(text);
 }
 
 function hideMessage(){
