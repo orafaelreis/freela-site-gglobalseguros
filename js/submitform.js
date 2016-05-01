@@ -3,9 +3,9 @@ $('#formcontato').submit(function(e){
     e.preventDefault(); //Prevent Default action.
     var valid = validaForm(this);
     if (valid) {
-      // var url = 'http://rocky-ocean-9250.heroku.com/scripts-php/send-mail-to-gglobalseguros.php?access=1';
+      var url = 'http://rocky-ocean-9250.heroku.com/scripts-php/send-mail-to-gglobalseguros.php?access=1';
       // var url = 'http://localhost:8888/heroku/php-getting-started/web/scripts-php/send-mail-to-gglobalseguros.php?access=1';
-      var url = 'http://orafaelreis.web2319.uni5.net/send-mail-to-gglobalseguros.php?access=1';
+      // var url = 'http://orafaelreis.web2319.uni5.net/send-mail-to-gglobalseguros.php?access=1';
 
       var data = {
         'fnome': this.fnome.value,
