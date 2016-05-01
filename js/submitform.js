@@ -23,9 +23,6 @@ $('#formcontato').submit(function(e){
         contentType: "application/json;",
         dataType: 'json',
         data: JSON.stringify(data),
-        headers: {
-        'X-Requested-With': 'XMLHttpRequest'
-      },
         success: function(data){
           $('#form_warning').addClass('success').html(data.success_message);
         },
