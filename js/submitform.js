@@ -16,21 +16,37 @@ $('#formcontato').submit(function(e){
         'fcodigo': this.fcodigo.value
       };
 
-      $.ajax({
-        type: "POST",
-        url: url,
-        crossDomain: true,
-        contentType: "application/json;",
-        dataType: 'json',
-        data: JSON.stringify(data),
-        success: function(data){
-          $('#form_warning').addClass('success').html(data.success_message);
-        },
-        error: function(data){
-          data = data.responseJSON;
-          $('#form_warning').addClass('error').html(data.error_message);
-        },
-      });
+      // $.ajax({
+      //   async: true,
+      //   type: "POST",
+      //   url: url,
+      //   crossDomain: true,
+      //   contentType: "application/json;",
+      //   // dataType: 'json',
+      //   // data: JSON.stringify(data),
+      //   success: function(data){
+      //     $('#form_warning').addClass('success').html(data.success_message);
+      //   },
+      //   error: function(data){
+      //     data = data.responseJSON;
+      //     $('#form_warning').addClass('error').html(data.error_message);
+      //   },
+      // });
+
+      var data = null;
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
+    }
+  });
+
+  xhr.open("OPTIONS", "https://rocky-ocean-9250.heroku.com/scripts-php/send-mail-to-gglobalseguros.php?access=1");
+  xhr.setRequestHeader("cache-control", "no-cache");
+  xhr.send(data);
+
 
       $('#formcontato').remove();
       $('#form_warning').attr('class','').html('Enviando...');
