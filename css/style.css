@@ -108,6 +108,10 @@ input, textarea{
   width: 100%;
 }
 
+textarea{
+  min-height: 125px;
+}
+
 header{ position: relative; display: block;}
 header nav{
   display: inline-block;
